@@ -1,11 +1,11 @@
 # Roofinder Project
 
-This project is to automate the assessment process of solar panel installation, which includes finding available space (roofs) and specifying the features of that place.
+This project is to automate the assessment process of solar panel installation, which includes finding available space (rooftops) and specifying the features of that place.
 
 
 ## General pipeline for this project:
-* Automatically detect roofs from the given satellite image.
-* Specify the type of the roof (flat, hip, gable). 
+* Automatically detect rooftops from satellite images.
+* Specify the type of the rooftop (flat, hip, gable). 
 * Calculate the surface area excluding obstructions.
 * Place suggested solar panels taking into consideration the roof edges, obstacles, and rotation.
 
@@ -16,11 +16,11 @@ This project is to automate the assessment process of solar panel installation, 
 Our approach combines 2 CNN models to segment and classify rooftops in addition to image processing techniques to crop the satellite image based on the segmentation results then calculate the area for each rooftop detected then finally plot suggested placements for solar panels on the detected rooftops.
 
 ### CNN Models:
--  U-net model for semantic segmentation to label the roofs
+-  U-net model for semantic segmentation to label the rooftops
 -  Multi-class classification model to classify roof types (Hip, gable, flat)
 
 ### Image processing:
--  Extract the roof into a separate cropped image.
+-  Extract each detected rooftop into a separate cropped image.
 -  Calculate the area of the roof
 -  Plot suggested placements for the solar panel
 

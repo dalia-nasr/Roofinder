@@ -11,7 +11,7 @@ This project is to automate the assessment process of solar panel installation, 
 
 
 
-## The project is composed of:
+## Project Development:
 
 Our approach combines 2 CNN models to segment and classify rooftops in addition to image processing techniques to crop the satellite image based on the segmentation results then calculate the area for each rooftop detected then finally plot suggested placements for solar panels on the detected rooftops.
 

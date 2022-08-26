@@ -35,4 +35,5 @@ Then we containerized the app using docker and deployed it on Heruko using AWS E
 
 
 This was the capstone project for the MLC training program with Zaka AI.
+Project Report: https://docs.google.com/document/d/1zOV_ufTdYVlAyo5UlTS2zegPGU7uaHbSB-xvuSI-8cA/edit
 
